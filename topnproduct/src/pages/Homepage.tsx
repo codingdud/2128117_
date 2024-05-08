@@ -22,26 +22,7 @@ const Homepage: React.FC = () => {
   useEffect(() => {
     let source = axios.CancelToken.source();
 
-    // const fetchProducts = async () => {
-    //   try {
-    //     const response: AxiosResponse<Product[]> = await axios.get(
-    //       'http://20.244.56.144/test/companies/AMZ/categories/Laptop/products?top=10&minPrice=1&maxPrice=10000',
-    //       {
-    //         cancelToken: source?.token,
-    //         headers: {
-    //           Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzE1MTQ3MTgwLCJpYXQiOjE3MTUxNDY4ODAsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjYzMmQ0YWM2LTkyMDktNDU5MS04MDkxLTAzMGFkMTg1Y2Y4ZiIsInN1YiI6IjIxMjgwODBAa2lpdC5hYy5pbiJ9LCJjb21wYW55TmFtZSI6ImdvTWFydCIsImNsaWVudElEIjoiNjMyZDRhYzYtOTIwOS00NTkxLTgwOTEtMDMwYWQxODVjZjhmIiwiY2xpZW50U2VjcmV0IjoiWFBWcWpTTlZEaU9rYlZKdyIsIm93bmVyTmFtZSI6IlBpeXVzaCBSYW5qYW4gU2F0YXBhdGh5Iiwib3duZXJFbWFpbCI6IjIxMjgwODBAa2lpdC5hYy5pbiIsInJvbGxObyI6IjIxMjgwODAifQ.Vl7wKnPN3ixKv68Yr03VRLAgnFAZz6HcyS-NY5VqhOM`
-    //         }
-    //       }
-    //     );
-    //     setProducts(response.data);
-    //     setLoading(false);
-    //   } catch (error:any) {
-    //     if (!axios.isCancel(error)) {
-    //       setError(error.message);
-    //       setLoading(false);
-    //     }
-    //   }
-    // };
+  
     const fetchToken = async () => {
         try {
           const requestBody = {
